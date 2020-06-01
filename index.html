@@ -61,7 +61,7 @@
                 var dominoShape = new CANNON.Box(new CANNON.Vec3(1,2,0.15));
                 var domino = new CANNON.Body({ mass: 10 });
                 domino.addShape(dominoShape);
-                if (j == 0 && i == 0 ) {
+                if (j == 0) {
                     domino.velocity.set(0,5,0);
                 }
                 domino.quaternion.setFromAxisAngle(new CANNON.Vec3(1,0,0),Math.PI/2);
